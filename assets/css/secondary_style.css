@@ -203,6 +203,7 @@
 }
 
 .resPass-logo {
+  color: var(--color-white);
   font-size: 50px;
   font-weight: 800;
 }

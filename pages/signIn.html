@@ -55,7 +55,7 @@
                             </div>
                             <input type="password" name="" id="passwordField" placeholder="Password">
                         </div>
-                        <button type="submit" class="nexus-btn btn-sign">Sign in</button>
+                        <button type="submit" class="nexus-btn btn-sign btn-signIn">Sign in</button>
                         <div class="form-choose">
                             <div class="form-choose-remember">
                                 <input type="checkbox" name="" id="">
@@ -96,6 +96,17 @@
                 showButton.innerHTML = '<i class="fa-solid fa-eye"></i> Show';
             }
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const signInButton = document.querySelector(".btn-signIn");
+            console.log(signInButton);
+
+            signInButton.addEventListener("click", function () {
+                console.log("duoc click");
+                // Chuyển hướng về trang đăng nhập
+                window.location.href = "./dashboard.html"; // Thay đổi URL theo đường dẫn của trang đăng nhập của bạn
+            });
+        });
     </script>
 
 </body>
