@@ -1,0 +1,76 @@
+.nexus-project{
+    background: linear-gradient( 127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65% );
+    margin-top: 15px;
+    padding: 15px 40px;
+    border-radius: 20px;
+}
+.nexus-project .nexus-project-top {
+    border-bottom: 0.0625rem solid rgb(45, 55, 72);
+    padding-bottom: 8px;
+}
+.nexus-project .nexus-project-top h3{
+    font-size: 18px;
+}
+.nexus-project .nexus-project-bottom{
+    margin-top: 15px;
+}
+.nexus-project-bottom .project-table-top{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 15px 0;
+}
+.nexus-project-bottom .project-table-search{
+    background-color: #fff;
+    padding: 4px 16px;
+    border-radius: 50px;
+}
+.nexus-project-bottom .project-table-search input{
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+.nexus-project-bottom .project-table-search button{
+    border: none;
+    background-color: #fff;
+}
+.nexus-project-bottom .project-table-search i{
+    color: #333;
+}
+.nexus-project-bottom .project-table-create{
+    margin-left: 15px;
+}
+.nexus-project-bottom .project-table-create:hover{
+    cursor: pointer;
+}
+.nexus-project-bottom .project-table-create i{
+    font-size: 30px;
+}
+.nexus-project-bottom .project-table-bottom {
+    padding: 12px 0;
+}
+.nexus-project-bottom .project-table-bottom table{
+    --bs-table-bg: none;
+    --bs-table-color: none;
+}
+.nexus-project-bottom .project-table-bottom th{
+}
+.nexus-project-bottom .project-table-bottom td{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+}
+.nexus-project-bottom .project-table-bottom .column-btn,
+.nexus-project-bottom .project-table-bottom .table-btn{
+    text-align: center;
+}
+.nexus-project-bottom .project-table-bottom i{
+    padding: 8px;
+    font-size: 14px;
+    transition: all .2s ease;
+}
+.nexus-project-bottom .project-table-bottom i:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
+    color: #fff;
+}

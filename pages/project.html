@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="../assets/css/secondary_style.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/project.css">
+</head>
+
+<body>
+
+    <div class="nexus-sideBar">
+        <div class="nexus-sideBar__container">
+            <a href="#" class="nexus-sideBar-top">Nexus</a>
+            <hr>
+            <ul class="sideBar-part-list">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Overview</a></li>
+                <li class="sideBar-dashboard"><a href="../pages/dashboard.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                    <!-- <ul class="dashboard-menu">
+                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Member</a></li>
+                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Team</a></li>
+                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Project</a></li>
+                    </ul> -->
+                </li>
+                <li class="sideBar-active"><a href="#"><i class="fa-solid fa-folder-open"></i> Project</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calender</a></li>
+                <li><a href="./profile.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+            <hr>
+            <ul class="sideBar-part-list">
+                <li><a href="#"><i class="fa-solid fa-message"></i> Message</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-plus"></i> Create Org</a></li>
+            </ul>
+            <div class="nexus-sideBar-signOut">
+                <button type="submit" class="nexus-btn btn-signOut"><i class="fa-solid fa-right-from-bracket"></i> Sign
+                    Out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="nexus-dashboard">
+        <div class="nexus-dashboard-container">
+            <div class="nexus-dashboard-header">
+                <div class="header-welcome">Hello Nam Khanhs,<br><span>Welcome Back</span></div>
+                <div class="header-searchBar">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Search">
+                        <button class="nexus-btn btn-search" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="header-right">
+                    <div class="header-notify"><i class="fa-solid fa-bell"></i></div>
+                    <div class="header-avatar">
+                        <img src="../assets/img/avatar.jpg" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nexus-dashboard-main">
+                <div class="nexus-project">
+                    <div class="nexus-project-top">
+                        <h3>Project Management</h3>
+                    </div>
+                    <div class="nexus-project-bottom">
+                        <div class="project-table">
+                            <div class="project-table-top">
+                                <div class="project-table-search">
+                                    <form action="">
+                                        <input type="text" name="" id="" placeholder="Search">
+                                        <button class="btn-search-project" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                                <div class="project-table-create">
+                                    <i class="fa-solid fa-folder-plus"></i>
+                                </div>
+                            </div>
+                            <div class="project-table-bottom">
+                                <table class="table ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Team</th>
+                                            <th scope="col">Leader</th>
+                                            <th scope="col">Start Time</th>
+                                            <th scope="col">End Time</th>
+                                            <th class="column-btn" scope="col">Infor</th>
+                                            <th class="column-btn" scope="col">Delete</th>
+                                            <th class="column-btn" scope="col">Report</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus Font-end</td>
+                                            <td>Panda</td>
+                                            <td>Nguyen Van A</td>
+                                            <td>10/06/2023</td>
+                                            <td>20/10/2023</td>
+                                            <td class="table-btn"><i class="fa-solid fa-eye"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-trash"></i></td>
+                                            <td class="table-btn"><i class="fa-solid fa-file-contract"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery JS -->
+    <script src="../vendors/jquery/jquery-v371.min.js"></script>
+
+    <!-- Boostrap JS -->
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signOutButton = document.querySelector(".btn-signOut");
+
+            signOutButton.addEventListener("click", function () {
+                // Chuyển hướng về trang đăng nhập
+                window.location.href = "./signIn.html"; // Thay đổi URL theo đường dẫn của trang đăng nhập của bạn
+            });
+        });
+    </script>
+    <script>
+        $(".sideBar-dashboard").click(function(){
+            $(".dashboard-menu").toggle(150)
+        })
+    </script>
+</body>
+
+</html>

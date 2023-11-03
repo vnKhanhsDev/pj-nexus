@@ -36,13 +36,13 @@
             <ul class="sideBar-part-list">
                 <li><a href="#"><i class="fa-solid fa-house"></i> Overview</a></li>
                 <li class="sideBar-active sideBar-dashboard"><a href="#"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
-                    <ul class="dashboard-menu">
+                    <!-- <ul class="dashboard-menu">
                         <li><a href=""><i class="fa-solid fa-angle-right"></i>Member</a></li>
                         <li><a href=""><i class="fa-solid fa-angle-right"></i>Team</a></li>
-                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Project</a></li>
-                    </ul>
+                        <li><a href="/pages/project.html"><i class="fa-solid fa-angle-right"></i>Project</a></li>
+                    </ul> -->
                 </li>
-                <li><a href="#"><i class="fa-solid fa-folder-open"></i> Project</a></li>
+                <li><a href="./project.html"><i class="fa-solid fa-folder-open"></i> Project</a></li>
                 <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calender</a></li>
                 <li><a href="./profile.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
@@ -103,7 +103,7 @@
                                 <div class="nav-item-icon"><i class="fa-solid fa-folder-open"></i></div>
                                 <div class="nav-item-quantity">11</div>
                             </div>
-                            <div class="nav-item-bottom">Click Here <i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="nav-item-bottom to-project">Click Here <i class="fa-solid fa-arrow-right"></i></div>
                         </li>
                     </ul>
                     <div class="dashboard-main-calendar">
@@ -294,6 +294,16 @@
             signOutButton.addEventListener("click", function () {
                 // Chuyển hướng về trang đăng nhập
                 window.location.href = "./signIn.html"; // Thay đổi URL theo đường dẫn của trang đăng nhập của bạn
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signOutButton = document.querySelector(".to-project");
+
+            signOutButton.addEventListener("click", function () {
+                // Chuyển hướng về trang đăng nhập
+                window.location.href = "./project.html"; // Thay đổi URL theo đường dẫn của trang đăng nhập của bạn
             });
         });
     </script>
