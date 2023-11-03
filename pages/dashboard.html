@@ -35,7 +35,13 @@
             <hr>
             <ul class="sideBar-part-list">
                 <li><a href="#"><i class="fa-solid fa-house"></i> Overview</a></li>
-                <li class="sideBar-active"><a href="#"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+                <li class="sideBar-active sideBar-dashboard"><a href="#"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                    <ul class="dashboard-menu">
+                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Member</a></li>
+                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Team</a></li>
+                        <li><a href=""><i class="fa-solid fa-angle-right"></i>Project</a></li>
+                    </ul>
+                </li>
                 <li><a href="#"><i class="fa-solid fa-folder-open"></i> Project</a></li>
                 <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calender</a></li>
                 <li><a href="./profile.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
@@ -291,7 +297,11 @@
             });
         });
     </script>
-
+    <script>
+        $(".sideBar-dashboard").click(function(){
+            $(".dashboard-menu").toggle(150)
+        })
+    </script>
 </body>
 
 </html>

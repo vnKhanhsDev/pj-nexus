@@ -205,7 +205,25 @@ li {
 .nexus-sideBar-signOut .btn-signOut i {
   margin-right: 5px;
 }
-
+/* Nexus sidebar dashboard */
+.sideBar-dashboard{
+  position: relative;
+}
+.sideBar-dashboard .dashboard-menu{
+  display: none;
+  padding: 20px 20px 0 25%;
+}
+.sideBar-dashboard .dashboard-menu li{
+  display: block;
+}
+.sideBar-dashboard .dashboard-menu li i{
+  background-color: rgb(26, 31, 55) !important;
+  margin: 0;
+  transition: all .2s ease;
+}
+.sideBar-dashboard .dashboard-menu li:hover i{
+  margin-right: 10px;
+}
 /* Nexus dashboard */
 .nexus-dashboard {
   height: 100vh;
