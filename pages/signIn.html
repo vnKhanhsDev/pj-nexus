@@ -46,7 +46,7 @@
                                 <label for="">Email or Username <span class="nexus-warning">*</span></label>
                                 <a href="./signUp.html" class="sign-link">Need an account? <span>Sign up</span></a>
                             </div>
-                            <input type="text" name="" id="" placeholder="Email or Username">
+                            <input type="text" name="" id="usernameField" placeholder="Email or Username">
                         </div>
                         <div class="sign-input-field">
                             <div class="sign-input-field-top">
@@ -55,7 +55,8 @@
                             </div>
                             <input type="password" name="" id="passwordField" placeholder="Password">
                         </div>
-                        <button type="submit" class="nexus-btn btn-sign btn-signIn">Sign in</button>
+                        <div class="msg-signIn-incorrect">Username or password incorrect.</div>
+                        <button type="button" class="nexus-btn btn-sign btn-signIn" onclick="controlSignIn()">Sign in</button>
                         <div class="form-choose">
                             <div class="form-choose-remember">
                                 <input type="checkbox" name="" id="">
@@ -97,16 +98,16 @@
             }
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const signInButton = document.querySelector(".btn-signIn");
-            console.log(signInButton);
-
-            signInButton.addEventListener("click", function () {
-                console.log("duoc click");
-                // Chuyển hướng về trang đăng nhập
-                window.location.href = "./dashboard.html"; // Thay đổi URL theo đường dẫn của trang đăng nhập của bạn
-            });
-        });
+        function controlSignIn(){
+            var dataUsernameField = document.getElementById("usernameField").value;
+            var dataPasswordField = document.getElementById("passwordField").value;
+            if (dataUsernameField === "admin" && dataPasswordField === "admin"){
+                window.location.href = "./dashboard.html";
+            } else{
+                var messageIncorrect = document.querySelector(".msg-signIn-incorrect");
+                messageIncorrect.style.display = "block";
+            }
+        }
     </script>
 
 </body>

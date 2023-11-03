@@ -181,6 +181,18 @@
   color: var(--color-white);
 }
 
+.msg-signIn-incorrect {
+  display: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 13px 18px;
+  margin-top: 15px;
+  background: #ffebe8;
+  border: 1px solid #dd3c10;
+  transition: all .3s;
+}
+
 /* Forgot Password */
 #nexus-forgot-pass {
   height: 100vh;
