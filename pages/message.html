@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="../assets/css/secondary_style.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/message.css">
+</head>
+
+<body>
+
+    <div class="nexus-sideBar">
+        <div class="nexus-sideBar__container">
+            <a href="#" class="nexus-sideBar-top">Nexus</a>
+            <hr>
+            <ul class="sideBar-part-list">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Overview</a></li>
+                <li class="sideBar-dashboard" ><a href="./dashboard.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+					<ul class="dashboard-menu">
+                        <li><a href="./member.html"><i class="fa-solid fa-angle-right"></i>Member</a></li>
+                        <li><a href="./team.html"><i class="fa-solid fa-angle-right"></i>Team</a></li>
+                        <li><a href="./project.html"><i class="fa-solid fa-angle-right"></i>Project</a></li>
+                    </ul>
+				</li>
+                <li><a href="./project.html"><i class="fa-solid fa-folder-open"></i> Project</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calender</a></li>
+                <li><a href="./profile.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+            <hr>
+            <ul class="sideBar-part-list">
+                <li class="sideBar-active" ><a href="#"><i class="fa-solid fa-message"></i> Message</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-plus"></i> Create Org</a></li>
+            </ul>
+            <div class="nexus-sideBar-signOut">
+                <button type="submit" class="nexus-btn btn-signOut"><i class="fa-solid fa-right-from-bracket"></i> Sign
+                    Out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="nexus-dashboard">
+        <div class="nexus-dashboard-container">
+            <div class="nexus-dashboard-header">
+                <div class="header-welcome">Hello Nam Khanhs,<br><span>Welcome Back</span></div>
+                <div class="header-searchBar">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Search">
+                        <button class="nexus-btn btn-search" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="header-right">
+                    <div class="header-notify"><i class="fa-solid fa-bell"></i></div>
+                    <div class="header-avatar">
+                        <img src="../assets/img/avatar.jpg" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nexus-dashboard-main">
+              <div class="container-fluid h-100">
+			<div class="row justify-content-center h-100"  style="height: 655px;">
+				<div class="col-md-4  chat" ><div class="card mb-sm-3 mb-md-0 contacts_card" style="height: 605px;">
+					<div class="card-header">
+						<div class="input-group">
+							<input type="text" placeholder="Search..." name="" class="form-control search">
+							<div class="input-group-prepend">
+								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="card-body-miss contacts_body-miss">
+						<ul class="contacts">
+						<li class="active">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Tran Long Nhat</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Nguyen Viet Hoang</span>
+									<p>Left 7 mins ago</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Dinh Duc Khanh</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Pham Minh Hieu</span>
+									<p>Left 30 mins ago</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Tran Ai Quoc</span>
+									<p>Left 50 mins ago</p>
+								</div>
+							</div>
+						</li>
+						</ul>
+					</div>
+					<div class="card-footer"></div>
+				</div></div>
+				<div class="col-md-8  chat" >
+					<div class="card" style="height: 605px;">
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<div class="row">
+										<div class="col-md-12">
+											<span>Tran Long Nhat</span>
+											<span style="margin-left:10px"><i class="fas fa-video"></i></span>
+											<span style="margin-left:10px"><i class="fas fa-phone"></i></span>
+										</div>
+									</div>
+									<p>1767 Messages</p>
+								</div>
+							</div>
+							<span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+							<div class="action_menu">
+								<ul>
+									<li><i class="fas fa-user-circle"></i> View profile</li>
+									<li><i class="fas fa-users"></i> Add to close friends</li>
+									<li><i class="fas fa-plus"></i> Add to group</li>
+									<li><i class="fas fa-ban"></i> Block</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-body msg_card_body">
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									Hi, how are you Khanh?
+									<span class="msg_time">8:40 AM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									Hi Khalid i am good tnx how about you?
+									<span class="msg_time_send">8:55 AM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+							<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									I am good too, thank you for your chat template
+									<span class="msg_time">9:00 AM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									You are welcome
+									<span class="msg_time_send">9:05 AM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+							<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									I am looking for your next templates
+									<span class="msg_time">9:07 AM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									Ok, thank you have a good day
+									<span class="msg_time_send">9:10 AM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+						<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="../assets/img/User.jpg" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									Bye, see you
+									<span class="msg_time">9:12 AM, Today</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer-message">
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+								</div>
+								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery JS -->
+    <script src="../vendors/jquery/jquery-v371.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/message.js"></script>
+    <!-- Boostrap JS -->
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+		$(".sideBar-dashboard").mousemove(function(){
+			$(".dashboard-menu").show(150)
+		})
+		$(".sideBar-dashboard").mouseleave(function(){
+			$(".dashboard-menu").hide(150)
+		})
+	</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signOutButton = document.querySelector(".btn-signOut");
+
+            signOutButton.addEventListener("click", function () {
+                // Chuyển hướng về trang đăng nhập
+                window.location.href = "./signIn.html"; // Thay đổi URL theo đường dẫn của trang đăng nhập của bạn
+            });
+        });
+    </script>
+
+</body>
+
+</html>

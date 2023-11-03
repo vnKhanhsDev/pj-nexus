@@ -35,14 +35,20 @@
             <hr>
             <ul class="sideBar-part-list">
                 <li><a href="#"><i class="fa-solid fa-house"></i> Overview</a></li>
-                <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fa-solid fa-folder-open"></i> Project</a></li>
+                <li class="sideBar-dashboard"><a href="./dashboard.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                    <ul class="dashboard-menu">
+                        <li><a href="./member.html"><i class="fa-solid fa-angle-right"></i>Member</a></li>
+                        <li><a href="./team.html"><i class="fa-solid fa-angle-right"></i>Team</a></li>
+                        <li><a href="./project.html"><i class="fa-solid fa-angle-right"></i>Project</a></li>
+                    </ul>
+                </li>
+                <li><a href="./project.html"><i class="fa-solid fa-folder-open"></i> Project</a></li>
                 <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calender</a></li>
                 <li class="sideBar-active"><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
             <hr>
             <ul class="sideBar-part-list">
-                <li><a href="#"><i class="fa-solid fa-message"></i> Message</a></li>
+                <li><a href="./message.html"><i class="fa-solid fa-message"></i> Message</a></li>
                 <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
                 <li><a href="#"><i class="fa-solid fa-circle-plus"></i> Create Org</a></li>
             </ul>
@@ -276,8 +282,14 @@
                     });
                 });
             </script>
-
-
+            <script>
+                $(".sideBar-dashboard").mousemove(function(){
+                    $(".dashboard-menu").show(150)
+                })
+                $(".sideBar-dashboard").mouseleave(function(){
+                    $(".dashboard-menu").hide(150)
+                })
+            </script>
 
 </body>
 

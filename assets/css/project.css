@@ -49,11 +49,15 @@
 .nexus-project-bottom .project-table-bottom {
     padding: 12px 0;
 }
-.nexus-project-bottom .project-table-bottom table{
+.nexus-project-bottom .project-table-bottom .table-fixed{
     --bs-table-bg: none;
     --bs-table-color: none;
+    
 }
-.nexus-project-bottom .project-table-bottom th{
+.table-fixed > tbody{
+    vertical-align: middle;
+    height: 200px;
+    overflow-y: auto;
 }
 .nexus-project-bottom .project-table-bottom td{
     font-size: 14px;
